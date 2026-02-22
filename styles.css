@@ -1,0 +1,250 @@
+/* BASE */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #000;
+  color: #ccc;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* LOGO */
+.brand .logo {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* NAV */
+.main-nav {
+  position: sticky;
+  top: 0;
+  background: #111;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-list a:hover { color: #ff6b6b; }
+
+/* IMAGES */
+.full-width-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* HERO (white band) */
+.music-links {
+  width: 100%;
+  background: #fff;
+  padding: 80px 0;
+}
+
+.music-links h2 {
+  color: #000;
+}
+
+.hero-tag {
+  width: 100%;
+  background: #fff;
+  padding: 80px 0;
+}
+
+.hero-tag .hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-tag h1 {
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero-tag .about-text {
+  color: #000;
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-top: 18px;
+}
+
+.hero-tag a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* BUTTONS / LINK BUTTONS */
+.hero-button { margin-top: 30px; }
+
+.hero-tag a.stream-button {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-tag a.stream-button:hover {
+  color: #c7a86b;
+}
+
+.stream-button,
+.music-links a {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.stream-button:hover,
+.music-links a:hover {
+  background: #222;
+  color: #c7a86b;
+  transform: translateY(-2px);
+}
+
+.music-links a.secondary {
+  padding: 10px 24px;
+  font-size: 0.95rem;
+}
+
+.button {
+  background: #000;
+  color: #fff;
+}
+
+/* MUSIC PAGE: the row of platform links */
+.links-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.music-links h3 {
+  color: #000;
+}
+
+/* EMAIL SIGNUP (white band) */
+.email-signup {
+  width: 100%;
+  background: #fff;
+  padding: 60px 0;
+}
+
+.email-signup .signup-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Mailchimp embed */
+#mc_embed_signup {
+  color: #000 !important;
+  text-align: center;
+}
+
+#mc_embed_signup label { font-size: 0.9rem; }
+
+#mc_embed_signup .indicates-required {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+#mc_embed_signup input[type="email"] {
+  color: #000;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 6px;
+}
+
+#mc_embed_signup input[type="submit"] {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#mc_embed_signup input[type="submit"]:hover {
+  background: #222;
+  color: #c7a86b;
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+.site-footer {
+  background: #000;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+.footer-links a {
+  color: #999;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover { color: #fff; }
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .nav-list { gap: 12px; }
+  .nav-list a { font-size: 14px; }
+}
