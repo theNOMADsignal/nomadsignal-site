@@ -30,6 +30,13 @@
         <li><a href="music.html">Music</a></li>
         <li><a href="https://nomadsignal.printful.me" target="_blank" rel="noopener">Shop</a></li>
         <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="#" id="contact-link">Contact</a>
+          <script>
+            const user = "nomad";
+            const domain = "nomadsignal.com";
+            const link = document.getElementById("contact-link");
+            link.href = "mailto:" + user + "@" + domain;
+          </script></li>
       </ul>
     </div>
   </nav>
@@ -63,6 +70,44 @@
   </div>
 </section>
 
+<section class="about-photo">
+  <img src="/Images/NOMADsignalAbout.JPG" alt="NOMADsignal" class="about-image">
+</section>
+
+<section class="email-signup">
+  <div class="container signup-container">
+
+    <div id="mc_embed_signup">
+      <form action="https://nomadsignal.us21.list-manage.com/subscribe/post?u=6b68b1984f2ef47b28dd68285&amp;id=ca55ccc167&amp;f_id=0015abe6f0"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_self"
+            novalidate>
+
+        <h2>Receive Updates</h2>
+
+        <div class="mc-field-group">
+          <label for="mce-EMAIL">Email (required)</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" required>
+        </div>
+
+        <!-- hidden bot field -->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_6b68b1984f2ef47b28dd68285_ca55ccc167" tabindex="-1">
+        </div>
+
+        <div>
+          <input type="submit" value="Subscribe" class="button">
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
   </main>
 
   <!-- Footer -->
@@ -70,10 +115,6 @@
     <div class="container footer-grid">
       <div class="footer-col">
         <p>© 2011-2026 NOMADsignal. All rights reserved.</p>
-        <br>
-        <ul class="footer-links">
-          <li><a href="mailto:nomad@nomadsignal.com">Contact</a></li>
-        </ul>
       </div>
     </div>
   </footer>

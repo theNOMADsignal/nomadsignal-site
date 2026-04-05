@@ -26,62 +26,114 @@
           <li><a href="music.html" aria-current="page">Music</a></li>
           <li><a href="https://nomadsignal.printful.me" target="_blank" rel="noopener">Shop</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="#" id="contact-link">Contact</a>
+          <script>
+            const user = "nomad";
+            const domain = "nomadsignal.com";
+            const link = document.getElementById("contact-link");
+            link.href = "mailto:" + user + "@" + domain;
+          </script></li>
         </ul>
       </div>
     </nav>
 
 <!-- Main content -->
-<main class="container main-content">
+<main class="library-main">
 
-<!-- Bandcamp Embed-->
-
-
-    <!-- Streaming Links Section -->
-    <section class="music-links">
-      <h2>Music</h2>
-    <div class="container hero-container">
-      <div class="hero-button">
-            <a href="https://nomadsignal.bandcamp.com/" class="stream-button">Listen / Buy On Bandcamp</a>
-          </div>
-          <br><br>
-        <h3>Stream/Buy:</h3>
-        <br>
-        <div class="links-grid">   
-        <a href="https://music.apple.com/us/artist/nomadsignal/1376109954" target="_blank" class="secondary">Apple Music</a>
-        <a href="https://open.spotify.com/artist/110f8ZRhJLb8L0cSQ7nenA?si=9LlCWlqxTwqW6zM3g2jtFg" target="_blank" class="secondary">Spotify</a>
-        <a href="https://www.beatport.com/artist/nomadsignal/685434?srsltid=AfmBOop4ckv2qgrdnFsNkKJCjEyEFxkDIwvitnBCp222T9zR2kv-aoGu" target="_blank" class="secondary">Beatport</a>
-        </div>
-    </div>
-    </section>
-
-
-  <!-- Mailchimp Signup -->
-  <section class="email-signup">
-    <div class="container signup-container">
-      <div id="mc_embed_shell">
-        <div id="mc_embed_signup">
-          <form action="https://nomadsignal.us21.list-manage.com/subscribe/post?u=6b68b1984f2ef47b28dd68285&amp;id=ca55ccc167&amp;f_id=0015abe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
-              <div id="mc_embed_signup_scroll"><h2>Receive Updates</h2>
-            <div class="mc-field-group"><label for="mce-EMAIL">Email (required):</label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
-                </div>
-                <div id="mce-responses" class="clear foot">
-                  <div class="response" id="mce-error-response" style="display:none"></div>
-                  <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                  <input type="text" name="b_6b68b1984f2ef47b28dd68285_ca55ccc167" tabindex="-1" value="">
-                </div>
-                <div class="optionalParent">
-                  <div class="clear foot">
-                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                  </div>
-                </div>
-              </div>
-          </form>
-        </div>
-      </div>
+  <section class="library-hero">
+    <div class="library-intro">
+      <h1>Music</h1>
+      <p>Selected Works by NOMADsignal</p>
     </div>
   </section>
+
+  <section class="library-section">
+    <div class="release-grid">
+
+      <article class="release-card">
+        <img src="Images/StatesEP_CoverArtFINAL_JPEG.jpg" alt="States cover artwork" class="release-art">
+        <h3>States EP</h3>
+<div class="release-buttons">
+  <div class="release-placeholder">
+    Releases April 9, 2026
+  </div>
+</div>
+      </article>
+
+      <article class="release-card">
+        <img src="Images/The Great Journey (Album Cover).jpg" alt="The Great Journey cover artwork" class="release-art">
+        <h3>The Great Journey LP</h3>
+        <div class="release-buttons">
+          <a href="https://ditto.fm/the-great-journey" class="stream-button secondary">Streaming</a>
+        </div>
+      </article>
+
+      <article class="release-card">
+        <img src="Images/bloomNOMADsignalRemixArtwork.jpg" alt="Genix remix cover artwork" class="release-art">
+        <h3>Genix - Bloom (NOMADsignal Remix)</h3>
+        <div class="release-buttons">
+          <a href="https://open.spotify.com/track/2NVLAGrVodCce9VYyzdZAG?si=58478b82a5b740c2" class="stream-button secondary">Streaming</a>
+        </div>
+      </article>
+
+      <article class="release-card">
+        <img src="Images/pitchblendeEpCover.jpg" alt="Pitchblende EP cover artwork" class="release-art">
+        <h3>Pitchblende EP</h3>
+        <div class="release-buttons">
+          <a href="https://gate.sc/?url=https%3A%2F%2Fcoldharbour.complete.me%2Fpichtblende-ep&token=b3dfea-1-1775406693060" class="stream-button secondary">Streaming</a>
+        </div>
+      </article>
+
+      <article class="release-card">
+        <img src="Images/ttmCoverFINAL.jpeg" alt="Talk To Me cover artwork" class="release-art">
+        <h3>Talk To Me feat. Oleksandra Plisenko</h3>
+        <div class="release-buttons">
+          <a href="https://ditto.fm/govori-talk-to-me" class="stream-button secondary">Streaming</a>
+        </div>
+      </article>
+
+      <article class="release-card">
+        <img src="Images/tuyemiraiALBUMCOVER.jpg" alt="Tu Ye Mi Rai cover artwork" class="release-art">
+        <h3>ти є мій рай feat. Eva Pavlova</h3>
+        <div class="release-buttons">
+          <a href="https://ditto.fm/ti-je-mii-rai" class="stream-button secondary">Streaming</a>
+        </div>
+      </article>
+
+      <article class="release-card">
+        <img src="Images/shchedrykArt.jpeg" alt="Shchedryk cover artwork" class="release-art">
+        <h3>Shchedryk feat. Nastya Mendus</h3>
+        <div class="release-buttons">
+          <a href="https://ditto.fm/shchedryk" class="stream-button secondary">Streaming</a>
+        </div>
+      </article>
+
+
+      <article class="release-card">
+        <img src="Images/artificialCover.png" alt="Shchedryk cover artwork" class="release-art">
+        <h3>Artificial LP</h3>
+        <div class="release-buttons">
+          <a href="https://nomadsignal.bandcamp.com/album/artificial-lp" class="stream-button secondary">Bandcamp</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+<section class="library-catalog">
+  <div class="library-catalog-inner">
+
+    <h2>Complete Catalog</h2>
+    <p>For a broader view of releases available on streaming platforms:</p>
+
+    <div class="release-buttons">
+      <a href="Yhttps://open.spotify.com/artist/110f8ZRhJLb8L0cSQ7nenA?si=oBSgqoHXTGOtZgdpCwTvOw" class="stream-button secondary">
+        Full Streaming Catalog
+      </a>
+    </div>
+
+  </div>
+</section>
 
 </main>
 
@@ -90,10 +142,6 @@
   <div class="container footer-grid">
     <div class="footer-col">
       <p>© 2011-2026 NOMADsignal. All rights reserved.</p>
-      <br>
-      <ul class="footer-links">
-        <li><a href="mailto:nomad@nomadsignal.com">Contact</a></li>
-      </ul>
     </div>
   </div>
 </footer>
